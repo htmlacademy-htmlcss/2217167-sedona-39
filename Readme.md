@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктория Фадеева](https://up.htmlacademy.ru/htmlcss/39/user/2217167).
-* Наставник:[Екатерина Комнатная] (https://htmlacademy.ru/profile/id215761).
+* Наставник:[Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 * Сайт: [Мой проект Седона](https://viktoriyafv.github.io/2217167-sedona-39/).
 ---
 
