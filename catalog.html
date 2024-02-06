@@ -14,7 +14,7 @@
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link nav-link-current" href="#">Главная</a>
+            <a class="nav-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">О Седоне</a>
@@ -37,24 +37,25 @@
               <span class="notification-favorite">12</span>
             </a>
           </li>
-          <li class="nav-user-item">
-            <a class="nav-user-link nav-user-link-favorite-hotel" href="">Хочу сюда</a>
-          </li>
         </ul>
+        <a class="nav-user-link nav-user-link-favorite-hotel" href="">Хочу сюда</a>
       </nav>
     </header>
     <main class="main-catalog" data-test="main">
       <header class="catalog-header">
         <h1 class="catalog-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><img class="breadcrumbs-icon" src=""
-                alt="Иконка для перехода на главную страницу"><span class="visually-hidden">Главная</span></a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <ol>
+            <li>
+              <a href="index.html"><img class="breadcrumbs-icon" src=""
+                  alt="Иконка для перехода на главную страницу"><span class="visually-hidden">Главная</span></a>
+                <span aria-hidden = "true">Декоративный элемент</span >
+            </li>
+            <li>
+              <a href="#" aria-current="page">Гостиницы</a>
+            </li>
+          </ol>
+      </nav>
       </header>
       <section class="filters" data-test="filter">
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="get">
@@ -86,19 +87,19 @@
             <ul class="catalog-filter-submenu">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="hotels" checked>
+                  <input class="control-input" type="radio" name="allocation" value="hotels" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="motel">
+                  <input class="control-input" type="radio" name="allocation" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="apartments">
+                  <input class="control-input" type="radio" name="allocation" value="apartments">
                   Апартаменты
                 </label>
               </li>
@@ -106,20 +107,18 @@
           </fieldset>
           <fieldset class="catalog-filter">
             <legend class="catalog-filter-tittle">Стоимость, ₽:</legend>
-            <ul class="catalog-filter-submenu">
-              <li class="catalog-filter-item filter-price">
-                <label class="filter-range-control"><input type="text" name="min-interval" value="0">от</label>
-                <label class="filter-range-control"><input type="text" name="max-interval" value="9000">до</label>
-              </li>
-              <li class="catalog-filter-item filter-price">
+            <div class="catalog-filter-submenu filter-price">
+                <label class="filter-range-control"><input type="number" name="min-interval" value="0">от</label>
+                <label class="filter-range-control"><input type="number" name="max-interval" value="9000">до</label>
+            </div>
+            <div class="catalog-filter-toggle">
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Нижняя граница стоимости</span>
                 </button>
                 <button class="range-toggle toggle-max" type="button">
                   <span class="visually-hidden">Верхняя граница стоимости</span>
                 </button>
-              </li>
-            </ul>
+            </div>
           </fieldset>
           <button class="filter-btn-submit" type="submit">Применить</button>
           <button class="filter-btn-reset" type="reset">Сбросить</button>
@@ -252,12 +251,12 @@
         </ul>
       </section>
       <section class="index-content index-content-catalog subscribe" data-test="subscribe">
-        <h2 class="index-content-tittle">Подпишитесь на рассылку</h2>
-        <p class="index-content-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="content-tittle">Подпишитесь на рассылку</h2>
+        <p class="content-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form catalog-subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
           <p class="subscribe-form-name">
-            <label class="visually-hidden" for="user-email">Ваш E-mail</label>
-            <input type="text" id="user-email" name="Ваш e-mail" placeholder="Ваш e-mail">
+            <label class="visually-hidden" for="email">Ваш E-mail</label>
+            <input type="email" id="email" name="E-mail" placeholder="Ваш e-mail">
           </p>
           <button class="subscribe-btn" type="submit">Подписаться</button>
         </form>
