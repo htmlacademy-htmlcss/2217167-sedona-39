@@ -1,0 +1,258 @@
+@font-face{
+  font-family: "PT Sans";
+  src: "/fonts/ptsans-400.woff2" format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  src: "/fonts/ptsans-700.woff2" format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans" sans-serif;
+  width: 1200px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation{
+  font-size: 20px;
+}
+
+div.nav-user-favorite{
+  background-color: #756157;
+  width: 160px;
+  border-radius: 4px;
+}
+.nav-user-favorite{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.notification-favorite{
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  background: #7DB54F;
+  color: #FFF;
+}
+
+.hero{
+  background-color: lightblue;
+  background-image: url("/images/background-hero.jpg");
+  height: 485px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.content-tittle{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-description{
+  text-align: center;
+}
+
+.advantage-item-color{
+  background-color: #82B3D3;
+}
+
+.advantage-item-12{
+  background-color:  rgba(131, 179, 211, 0.12);
+}
+
+.advantage-item-20{
+  background-color:rgba(131, 179, 211, 0.20);
+}
+
+.advantage-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage-description{
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+div.index-content-btn{
+  text-align: center;
+}
+button.index-content-btn{
+  background-color: #756157;
+  width: 376px;
+  border-radius: 4px;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.index-subscribe{
+  background-color: lightblue;
+  background-image: url("/images/background-subscribe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFF;
+  text-align: center;
+}
+
+.subscribe-btn{
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.catalog-form{
+  background-color: lightblue;
+  background-image: url("/images/background-filter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1200px;
+  color: #FFF;
+}
+
+a.breadcrumbs{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.filter-btn-submit{
+  background-color: #82B3D3;
+  width: 191px;
+  border-radius: 4px;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-btn-reset{
+  background-color: rgba(0, 0, 0, 0);
+  width: 191px;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.result-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.product-card-title{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.card-price{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-btn{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card-btn-detailed{
+  background-color: #756157;
+  border-radius: 4px;
+  color: #FFF;
+}
+
+.card-btn-favorite{
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 4px;
+  color: #FFF;
+}
+
+.card-btn-rating{
+  background-color: #E6E6E6;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  width: 140px;
+}
+
+.pagination-link{
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:#FFF;
+}
+
+.pagination-current{
+  background-color: #F2F2F2;
+  color: #000;
+}
