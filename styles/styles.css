@@ -19,8 +19,9 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-decoration: none;
-  color: #000000;
   background-color: #FFFFFF;
+  color: #000000;
+
 }
 
 .button {
@@ -70,10 +71,10 @@ a.nav-user-favorite {
 /*hero*/
 
 .hero {
-  background-color: #b2d8f1;
   background-image: url("../images/hero-border.svg"), url("../images/background-hero.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom center, center;
+  background-color: #b2d8f1;
   background-size: 100% auto;
   color: #FFFFFF;
 
