@@ -11,7 +11,7 @@
   <body>
     <header class="page-header" data-test="header">
       <a href="index.html">
-        <img class="page-header-logo" src="images/logo.png" width="140" height="70" alt="Логотип проекта Седона">
+        <img class="page-header-logo" src="images/logotype-sedona.svg" width="140" height="70" alt="Логотип проекта Седона">
       </a>
       <nav class="navigation">
         <ul class="nav-list">
@@ -29,18 +29,16 @@
           <li class="nav-user-item">
             <a class="nav-user-link nav-user-link-search" href="">
               <span class="visually-hidden">Поиск</span>
-              <img src="images/icon-search.svg" width="18" height="18" alt="Иконка поиска">
             </a>
           </li>
           <li class="nav-user-item">
             <a class="nav-user-link nav-user-link-favorite" href="">
               <span class="visually-hidden">Избранное</span>
-              <img src="images/icon-favorite.svg" width="18" height="17" alt="Иконка Избранное">
               <span class="notification-favorite">12</span>
             </a>
           </li>
         </ul>
-        <a class="nav-user-favorite" href="">Хочу сюда!</a>
+        <a class="button nav-user-favorite" href="">Хочу сюда!</a>
       </nav>
     </header>
     <main class="main-catalog" data-test="main">
@@ -50,16 +48,10 @@
           <nav class="breadcrumbs" aria-label="Хлебные крошки">
             <ol>
               <li>
-                <a href="index.html">
-                  <span class="visually-hidden">Главная</span>
-                  <img src="images/breadcrumbs-home.svg" width="13" height="13"
-                    alt="Иконка для перехода на главную страницу">
-                </a>
-                <span class="visually-hidden" aria-hidden="true">Хлебные крошки</span>
-                <img src="images/breadcrumbs.svg" width="6" height="10" alt="Хлебные крошки">
+                <a href="index.html"></a><span class="visually-hidden">На главную страницу</span></a>
               </li>
               <li>
-                <a href="#" class="breadcrumbs" aria-current="page">Гостиницы</a>
+                <a href="#" aria-current="page">Гостиницы</a>
               </li>
             </ol>
           </nav>
@@ -127,8 +119,8 @@
                 </button>
               </div>
             </fieldset>
-            <button class="filter-btn-submit" type="submit">Применить</button>
-            <button class="filter-btn-reset" type="reset">Сбросить</button>
+            <button class="button filter-btn-submit" type="submit">Применить</button>
+            <button class="button filter-btn-reset" type="reset">Сбросить</button>
           </form>
         </section>
       </article>
@@ -141,22 +133,13 @@
         </select>
         <ul class="catalog-button-list">
           <li class="catalog-button-item">
-            <a href="#" class="button button-tile">
-              <span class="visually-hidden">Показать плиткой</span>
-              <img src="images/variant-tile.svg" width="16" height="14" alt="Иконка плитки">
-            </a>
+            <a href="#" class="button-tile"><span class="visually-hidden">Показать плиткой</span></a>
           </li>
           <li class="catalog-button-item">
-            <a class="button button-card" href="#">
-              <span class="visually-hidden">Показать карточками</span>
-              <img src="images/variant-slideshow.svg" width="18" height="18" alt="Иконка карточки">
-            </a>
+            <a class="button-card" href="#"><span class="visually-hidden">Показать карточками</span></a>
           </li>
           <li class="catalog-button-item">
-            <a class="button button-list" href="#">
-              <span class="visually-hidden">Показать список</span>
-              <img src="images/variant-list.svg" width="18" height="18" alt="Иконка списка">
-            </a>
+            <a class="button-list" href="#"><span class="visually-hidden">Показать список</span></a>
           </li>
         </ul>
       </section>
@@ -174,18 +157,10 @@
               <p class="card-price-type">Гостиница</p>
               <p class="card-price-value">От 4000 ₽</p>
             </div>
-            <div>
-              <a class="card-btn card-btn-detailed" href="#">подробнее</a>
-              <button class="card-btn card-btn-favorite" type="button">в избранное</button>
-            </div>
+            <a class="button card-btn card-btn-detailed" href="#">подробнее</a>
+            <button class="button card-btn card-btn-favorite" type="button">в избранное</button>
             <div class="card-rating">
-              <p class="card-btn card-star card-star-4">
-                <span class="visually-hidden">4 звезды</span>
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-              </p>
+              <p class="card-btn card-star card-star-4"><span class="visually-hidden">4 звезды</span></p>
               <p class="card-btn card-btn-rating">Рейтинг:<span class="card-rating">8,5</span></p>
             </div>
           </li>
@@ -202,16 +177,11 @@
               <p class="card-price-value">От 5000 ₽</p>
             </div>
             <div>
-              <a class="card-btn card-btn-detailed" href="#">подробнее</a>
-              <button class="card-btn card-btn-favorite card-selected" type="button">в избранном</button>
+              <a class="button card-btn card-btn-detailed" href="#">подробнее</a>
+              <button class="button card-btn card-btn-favorite card-selected" type="button">в избранном</button>
             </div>
             <div class="card-rating">
-              <p class="card-btn card-star card-star-4">
-                <span class="visually-hidden">4 звезды</span>
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда"></p>
+              <p class="card-btn card-star card-star-4"><span class="visually-hidden">4 звезды</span></p>
               <p class="card-btn card-btn-rating">Рейтинг:<span class="card-rating">9,2</span></p>
             </div>
           </li>
@@ -228,16 +198,11 @@
               <p class="card-price-value">От 2500 ₽</p>
             </div>
             <div class="card-btn">
-              <a class="card-btn card-btn-detailed" href="#">подробнее</a>
-              <button class="card-btn card-btn-favorite" type="button">в избранное</button>
+              <a class="button card-btn card-btn-detailed" href="#">подробнее</a>
+              <button class="button card-btn card-btn-favorite" type="button">в избранное</button>
             </div>
             <div class="card-rating">
-              <p class="card-btn card-star card-star-3">
-                <span class="visually-hidden">3 звезды</span>
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-              </p>
+              <p class="card-btn card-star card-star-3"><span class="visually-hidden">3 звезды</span></p>
               <p class="card-btn card-btn-rating">Рейтинг:<span class="card-rating">6,9</span></p>
             </div>
           </li>
@@ -254,15 +219,11 @@
               <p class="card-price-value">От 1500 ₽</p>
             </div>
             <div class="card-btn">
-              <a class="card-btn card-btn-detailed" href="#">подробнее</a>
-              <button class="card-btn card-btn-favorite" type="button">в избранное</button>
+              <a class="button card-btn card-btn-detailed" href="#">подробнее</a>
+              <button class="button card-btn card-btn-favorite" type="button">в избранное</button>
             </div>
             <div class="card-rating">
-              <p class="card-btn card-star card-star-2">
-                <span class="visually-hidden">2 звезды</span>
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-                <img src="images/star.svg" width="18" height="17" alt="Звезда">
-              </p>
+              <p class="card-btn card-star card-star-2"><span class="visually-hidden">2 звезды</span></p>
               <p class="card-btn card-btn-rating">Рейтинг:<span class="card-rating">5,0</span></p>
             </div>
           </li>
@@ -301,28 +262,25 @@
             <label class="visually-hidden" for="email">Ваш E-mail</label>
             <input type="email" id="email" name="E-mail" placeholder="Ваш e-mail">
           </p>
-          <button class="subscribe-btn" type="submit">Подписаться</button>
+          <button class="button subscribe-btn" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="footer-catalog" data-test="footer">
+    <footer class="footer-main footer-catalog" data-test="footer">
       <ul class="socials-list">
         <li class="socials-item">
           <a class="socials-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-            <img src="images/social-vk.svg" width="24" height="14" alt="Иконка ВКонтакте">
+            <img src="" alt="Vkontakte">
           </a>
         </li>
         <li class="socials-item">
           <a class="socials-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-            <img src="images/social-tg.svg" width="18" height="16" alt="Иконка Telegram">
+            <img src="" alt="Telegram">
           </a>
         </li>
         <li class="socials-item">
           <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
-            <img src="images/social-youtub.svg" width="22" height="17" alt="Иконка Youtube">
+            <img src="" alt="Youtube">
           </a>
         </li>
       </ul>
