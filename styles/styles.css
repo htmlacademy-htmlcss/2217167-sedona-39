@@ -32,7 +32,9 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #82B3D3;
   border: none;
+  border-radius: 4px;
 }
 
 /*Header*/
@@ -60,7 +62,6 @@ body {
 
 .nav-user-favorite {
   background-color: #756157;
-  border-radius: 4px;
   width: 160px;
 }
 
@@ -73,7 +74,7 @@ a.nav-user-favorite {
 .hero {
   background-image: url("../images/hero-border.svg"), url("../images/background-hero.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, center;
+  background-position: bottom center, center center;
   background-color: #b2d8f1;
   background-size: 100% auto;
   color: #FFFFFF;
@@ -110,7 +111,7 @@ a.nav-user-favorite {
   color: #333333;
 }
 
-.advantage-item-color {
+.advantage-ite-color {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -131,7 +132,6 @@ a.nav-user-favorite {
 
 button.index-search-btn {
   background-color: #756157;
-  border-radius: 4px;
   width: 376px;
   font-size: 20px;
   line-height: 36px;
@@ -156,9 +156,6 @@ button.index-search-btn {
 }
 
 .subscribe-btn {
-  background-color: #82B3D3;
-  border-radius: 4px;
-  border: none;
   font-size: 20px;
   line-height: 36px;
 }
@@ -197,10 +194,7 @@ button.index-search-btn {
 }
 
 .filter-btn-submit {
-  background-color: #82B3D3;
   width: 191px;
-  border-radius: 4px;
-
 }
 
 .filter-btn-reset {
@@ -250,22 +244,15 @@ button.index-search-btn {
 
 .card-btn-detailed {
   background-color: #756157;
-  border-radius: 4px;
 }
 
 a.card-btn-detailed {
   color: #FFFFFF;
 }
 
-.card-btn-favorite {
-  background-color: #82B3D3;
-  border-radius: 4px;
-}
-
 .card-btn-rating {
   background-color: #E6E6E6;
   border: 1px solid #E6E6E6;
-  border-radius: 4px;
   width: 140px;
   font-weight: 400;
   text-align: center;
