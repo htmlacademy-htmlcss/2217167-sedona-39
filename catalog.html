@@ -109,10 +109,8 @@
             <fieldset class="catalog-filter">
               <legend class="catalog-filter-tittle">Стоимость, ₽:</legend>
               <div class="catalog-filter-submenu filter-price">
-                <label class="filter-range-control"><input type="number" name="min-interval" value="0">от</label>
-                <label class="filter-range-control"><input type="number" name="max-interval" value="9000">до</label>
-              </div>
-              <div class="catalog-filter-toggle">
+                <label class="filter-range-control">От<input type="number" name="min-interval" value="0"></label>
+                <label class="filter-range-control">До<input type="number" name="max-interval" value="9000"></label>
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Нижняя граница стоимости</span>
                 </button>
@@ -126,7 +124,7 @@
           </form>
         </section>
       </article>
-      <section class="filter-result">
+      <section class="catalog" data-test="catalog">
         <h2 class="result-title">Найдено гостиниц: <span class="result-sum">38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -144,8 +142,6 @@
             <a class="button-list" href="#"><span class="visually-hidden">Показать список</span></a>
           </li>
         </ul>
-      </section>
-      <section class="catalog" data-test="catalog">
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="product.html">
@@ -165,7 +161,7 @@
             </div>
             <div class="card-rating">
               <p class="card-star card-star-4"><span class="visually-hidden">4 звезды</span></p>
-              <p class="card-btn-rating">Рейтинг:<span class="card-rating">8,5</span></p>
+              <p class="button card-btn-rating">Рейтинг:<span class="card-rating">8,5</span></p>
             </div>
           </li>
           <li class="product-card">
@@ -232,8 +228,6 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="pagination">
         <h2 class="visually-hidden">Пагинация</h2>
         <ul class="pagination-list">
           <li class="pagination-item">
