@@ -19,8 +19,8 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-decoration: none;
-  background-color: #FFFFFF;
   color: #000000;
+  margin: 0;
 
 }
 
@@ -72,11 +72,11 @@ a.nav-user-favorite {
 /*hero*/
 
 .hero {
-  background-image: url("../images/hero-border.svg"), url("../images/background-hero.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, center center;
+  background-image: url("../images/background-hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: #b2d8f1;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
 
 }
@@ -111,7 +111,7 @@ a.nav-user-favorite {
   color: #333333;
 }
 
-.advantage-ite-color {
+.advantage-item-color {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -143,7 +143,7 @@ button.index-search-btn {
   background-color: #b2d8f1;
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
 }
 
@@ -180,9 +180,14 @@ button.index-search-btn {
   background-color: #b2d8f1;
   background-image: url("../images/background-filter.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   color: #FFFFFF;
+}
+
+.catalog-header-title {
+  font-size: 60px;
+  line-height: 78px;
 }
 
 .breadcrumbs a {
@@ -191,6 +196,18 @@ button.index-search-btn {
   font-weight: 400;
   line-height: 21px;
   text-decoration: none;
+}
+
+.catalog-filter-tittle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.control-input {
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .filter-btn-submit {
@@ -216,6 +233,12 @@ button.index-search-btn {
   color: #000000;
 }
 
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 /*catalog*/
 
 .product-card a {
@@ -233,13 +256,6 @@ button.index-search-btn {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-}
-
-.card-btn {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .card-btn-detailed {
