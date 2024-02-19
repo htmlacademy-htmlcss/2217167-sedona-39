@@ -316,10 +316,12 @@ button.index-search-btn {
   padding: 0 70px;
 }
 
+
 .socials-list {
   display: flex;
   align-items: center;
   width: 120px;
+  padding: 0;
 }
 
 .socials-item {
