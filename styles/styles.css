@@ -403,11 +403,26 @@ button.index-search-btn {
   padding: 0;
 }
 
+.catalog-filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-filter {
   border: none;
   width: 150px;
   margin: 0;
   padding: 0;
+  margin-right: 70px;
+}
+
+.catalog-filter:last-child {
+  margin-right: 0;
 }
 
 .catalog-filter-submenu {
@@ -424,7 +439,6 @@ button.index-search-btn {
   align-items: center;
   padding: 0;
   margin: 0;
-
 }
 
 .range-inputs-item {
@@ -457,12 +471,13 @@ button.index-search-btn {
 
 .filter-btn-submit {
   width: 191px;
-  padding: 0;
+  padding: 0 50px;
 }
 
 .filter-btn-reset {
   background-color: rgba(0, 0, 0, 0);
   width: 191px;
+  padding: 0 50px;
 }
 
 /*filter-result*/
@@ -495,6 +510,7 @@ button.index-search-btn {
   border-radius: 4px;
   margin: 0;
   margin-right: 70px;
+  padding: 8px 20px
 }
 
 .button-card {
