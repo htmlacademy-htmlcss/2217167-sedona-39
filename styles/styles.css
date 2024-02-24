@@ -731,8 +731,10 @@ a.card-btn-detailed {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 80px;
+  padding-top: 40px;
+  margin-top: 40px;
   list-style: none;
+  border-top: 1px solid #E6E6E6;;
 }
 
 .pagination-item:not(:last-child) {
