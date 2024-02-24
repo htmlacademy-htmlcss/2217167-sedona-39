@@ -235,10 +235,6 @@ a.nav-user-favorite {
   margin: 0;
 }
 
-.content-description-promo {
-  width: 651px;
-  margin: 0 auto;
-}
 
 .advantage-list {
   display: flex;
@@ -310,11 +306,6 @@ a.nav-user-favorite {
   margin: 30px 0;
 }
 
-.content-description-invitation {
-  width: 490px;
-  margin: 0 auto;
-}
-
 .advantage-item-invitation {
   padding: 80px 85px;
 }
@@ -327,7 +318,7 @@ a.nav-user-favorite {
 }
 
 .content-tittle-search {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -359,13 +350,11 @@ button.index-search-btn {
 }
 
 .index-subscribe-content-tittle {
-  width: 404px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
 .index-subscribe-content {
-  width: 475px;
   color: #FFFFFF;
   margin: 0 auto;
 }
@@ -605,7 +594,6 @@ button.index-search-btn {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  width: 338px;
   margin: 0;
   margin-right: auto;
 }
@@ -683,15 +671,12 @@ button.index-search-btn {
   color: #000000;
 }
 
-
 .product-card-image {
   display: block;
   width: 300px;
   height: 212px;
   margin-bottom: 16px;
 }
-
-
 
 .product-card-title {
   font-size: 24px;
@@ -743,10 +728,11 @@ a.card-btn-detailed {
 /*pagination*/
 
 .pagination-list {
-  margin-top: 80px;
-  margin-bottom: 60px;
-  list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 80px;
+  list-style: none;
 }
 
 .pagination-item:not(:last-child) {
@@ -783,4 +769,5 @@ a.card-btn-detailed {
   text-align: center;
   width: 60px;
   height: 60px;
+  padding: 12px 0;
 }
