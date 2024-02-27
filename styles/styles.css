@@ -194,7 +194,7 @@ button:disabled {
   width: 160px;
   background-color: #756157;
   margin: 0;
-  padding: 8px 34px;
+  padding: 8px 0;
   margin-left: 20px;
 }
 
@@ -242,7 +242,8 @@ a.nav-user-favorite {
 /*advantage*/
 
 .container-promo {
-  padding: 69px 0;
+  padding-top: 70px;
+  padding-bottom: 90px;
 }
 
 .content-tittle-promo {
@@ -308,7 +309,10 @@ a.nav-user-favorite {
   height: 2px;
   background-color: #000000;
   opacity: 0.3;
+}
 
+.advantage-item-dark .advantage-container-promo::before {
+  background-color: #FFFFFF;
 }
 
 .advantage-img {
@@ -638,6 +642,7 @@ button.index-search-btn:active {
   background-image: url(../images/breadcrumbs.svg);
   background-repeat: no-repeat;
   background-position: center;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-item:last-child .breadcrumbs-link::before {
@@ -1002,12 +1007,12 @@ a.card-btn-detailed {
 }
 
 .star:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .card-btn-rating {
   grid-column: 2/3;
-  background-color: #E6E6E6;
+  background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -1063,6 +1068,7 @@ a.card-btn-detailed {
 
 .pagination-current {
   background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
   color: #000000;
 }
 
@@ -1070,6 +1076,7 @@ a.card-btn-detailed {
 .pagination-current:focus,
 .pagination-current:active {
   background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
   color: #000000;
 }
 
