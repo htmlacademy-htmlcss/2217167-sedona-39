@@ -110,7 +110,7 @@ button:disabled {
 
 .nav {
   position: relative;
-  padding-left: 170px;
+  padding-left: 168px;
 }
 
 .nav-link {
@@ -283,7 +283,7 @@ a.nav-user-favorite {
   align-items: center;
   width: 400px;
   min-height: 385px;
-  padding: 103px 85px;
+  padding: 102px 85px;
 }
 
 .advantage-title {
@@ -292,17 +292,14 @@ a.nav-user-favorite {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 60px;
-}
-
-.advantage-container-promo {
+  margin-bottom: 62px;
   position: relative;
 }
 
-.advantage-container-promo::before {
+.advantage-title-promo::before {
   position: absolute;
   content: "";
-  top: 50%;
+  top: 85px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60px;
@@ -311,7 +308,7 @@ a.nav-user-favorite {
   opacity: 0.3;
 }
 
-.advantage-item-dark .advantage-container-promo::before {
+.promo-dark .advantage-title-promo::before {
   background-color: #FFFFFF;
 }
 
@@ -465,12 +462,12 @@ button.index-search-btn:active {
 .index-subscribe-content {
   color: #FFFFFF;
   margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .subscribe-form {
   display: flex;
   align-items: center;
-  margin-top: 54px;
 }
 
 .subscription-field {
