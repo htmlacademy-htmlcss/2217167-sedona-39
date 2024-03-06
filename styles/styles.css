@@ -755,7 +755,7 @@ button.index-search-btn:active {
 
 .control-mark {
   position: absolute;
-  top: 2;
+  top: 2px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -898,7 +898,7 @@ button.index-search-btn:active {
 
 .toggle-min {
   top: -8px;
-  left: -1;
+  left: -1px;
 }
 
 .toggle-max {
