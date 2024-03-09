@@ -35,8 +35,10 @@
                 <a class="nav-user-link nav-user-link-search" href="">
                   <span class="visually-hidden">Поиск</span>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z" fill="black"/>
-                    </svg>
+                    <path
+                      d="M19.5 18.0083L15.8 14.3287C16.8 13.0359 17.5 11.3453 17.5 9.4558C17.5 5.08011 13.9 1.5 9.5 1.5C5.1 1.5 1.5 5.17956 1.5 9.55525C1.5 13.9309 5.1 17.511 9.5 17.511C11.3 17.511 13 16.9144 14.4 15.8204L18.1 19.5L19.5 18.0083ZM9.5 15.5221C6.2 15.5221 3.5 12.837 3.5 9.55525C3.5 6.27348 6.2 3.5884 9.5 3.5884C12.8 3.5884 15.5 6.27348 15.5 9.55525C15.5 12.837 12.8 15.5221 9.5 15.5221Z"
+                      fill="black" />
+                  </svg>
                 </a>
               </li>
               <li class="nav-user-item">
@@ -65,7 +67,8 @@
         <section class="advantage" data-test="advantages">
           <div class="container-promo">
             <h2 class="visually-hidden">Преимущества</h2>
-            <p class="content-tittle content-tittle-promo">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
+            <p class="content-tittle content-tittle-promo">Седона — небольшой городок в Аризоне,<br> заслуживающий
+              большего!
             </p>
             <p class="content-description content-description-promo">Рассмотрим причины, по которым Седона круче, чем
               Гранд-Каньон!</p>
@@ -73,7 +76,7 @@
           <ul class="advantage-list">
             <li class="advantage-item advantage-item-dark">
               <div class="advantage-container promo-dark">
-                <h3 class="advantage-title advantage-title-promo">Настоящий<br>городок</h3>
+                <h3 class="advantage-title advantage-title-promo">Настоящий городок</h3>
                 <p class="advantage-description advantage-description-white">Седона — не аттракцион для туристов, там
                   течёт своя жизнь</p>
               </div>
@@ -110,8 +113,10 @@
         </section>
         <section class="advantage">
           <div class="container-invitation">
-            <p class="content-tittle content-tittle-invitation">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
-            <p class="content-description content-description-invitation">Опытный персонал и качественное обслуживание!
+            <p class="content-tittle content-tittle-invitation">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
+            </p>
+            <p class="content-description content-description-invitation">Опытный персонал и качественное
+              обслуживание!
             </p>
           </div>
           <ul class="advantage-list">
@@ -195,7 +200,7 @@
           </svg>
         </a>
       </footer>
-      <div class="modal-container modal-container-close ">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
@@ -205,14 +210,18 @@
             <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="modal-form-group">
                 <label class="modal-form-label" for="arrival">Дата Заезда:</label>
-                <input type="text" class="date-input date-arrival" id="arrival" name="arrival-date"
-                  value="27 апреля 2020" placeholder="Укажите дату" required>
+                <div class="container-date-input">
+                  <input type="text" class="date-input date-arrival" id="arrival" name="arrival-date"
+                    value="27 апреля 2020" placeholder="Укажите дату" required>
+                </div>
                 <span class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="modal-form-group">
                 <label class="modal-form-label" for="departure-date">Дата Выезда:</label>
-                <input class="date-input date-departure" id="departure-date" type="text" name="departure-date"
-                  value="1 сентября 2023" placeholder="Укажите дату" required>
+                <div class="container-date-input">
+                  <input class="date-input date-departure" id="departure-date" type="text" name="departure-date"
+                    value="1 сентября 2023" placeholder="Укажите дату" required>
+                </div>
                 <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="modal-form-quantity">
@@ -220,16 +229,16 @@
                 <div class="modal-button-wrapper">
                   <button type="button" class="button-guests button-guests-more">
                     <span class="visually-hidden">минус</span>
-                    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg-adults" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9v2h14V9H3Z" fill="#756157" />
                     </svg>
                   </button>
                   <input class="modal-form-field" id="adults" type="number" name="adults" min="1" value="2">
                   <button type="button" class="button-guests button-guests-less">
                     <span class="visually-hidden">плюс</span>
-                    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg-adults" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" />
                     </svg>
                   </button>
@@ -248,7 +257,8 @@
                             fill="#FFFFFF" />
                         </svg>
                       </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-kids">Укажите количество детей,
+                        которые будут с вами, возраст которых от 6 до
                         18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
                   </span>
@@ -256,16 +266,16 @@
                 <div class="modal-button-wrapper">
                   <button type="button" class="button-guests button-guests-more">
                     <span class="visually-hidden">минус</span>
-                    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg-adults" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 9v2h14V9H3Z" fill="#756157" />
                     </svg>
                   </button>
                   <input class="modal-form-field" id="kids" type="number" name="kids" min="1" value="2">
                   <button type="button" class="button-guests button-guests-less">
                     <span class="visually-hidden">плюс</span>
-                    <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg-adults" aria-hidden="true" focusable="false" width="20" height="20"
+                      viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="#756157" />
                     </svg>
                   </button>

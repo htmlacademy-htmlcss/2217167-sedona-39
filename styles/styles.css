@@ -41,7 +41,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2),
+  0 0 0 15px #FFFFFF;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -230,9 +231,7 @@ button:disabled {
 .nav-user-favorite {
   width: 160px;
   background-color: #756157;
-  margin: 0;
   padding: 8px 0;
-  margin-left: 20px;
 }
 
 a.nav-user-favorite {
@@ -296,9 +295,8 @@ a.nav-user-favorite {
 
 .content-tittle-promo {
   margin-bottom: 25px;
+  text-align: center;
 }
-
-
 
 .content-description {
   text-align: center;
@@ -341,7 +339,7 @@ a.nav-user-favorite {
 .advantage-title-promo::before {
   position: absolute;
   content: "";
-  top: 87px;
+  bottom: -32px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60px;
@@ -522,6 +520,20 @@ button.index-search-btn:active {
   border: none;
   background-color: #F2F2F2;
   align-self: stretch;
+}
+
+.subscription-field:hover,
+.subscription-field:active{
+  background-color: #ebf44060;
+}
+
+.subscription-field:focus {
+  outline: 1px solid #68A2CA;
+  outline-offset: -1px;
+}
+
+.subscription-field:disabled {
+  opacity: 0.3;
 }
 
 .subscribe-btn {
@@ -822,6 +834,16 @@ button.index-search-btn:active {
   border-radius: 4px 0 0 4px;
   background-color: #F2F2F2;
 }
+
+.catalog-label-wrapper:hover {
+  background-color: #E6E6E6;
+}
+
+.catalog-label-wrapper:focus-within {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
 
 .catalog-label-wrapper-max {
   border-radius: 0 4px 4px 0;
@@ -1336,21 +1358,36 @@ a.card-btn-detailed {
   background-color: #F2F2F2;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-button::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
   background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
+  z-index: 1;
 }
 
 .modal-close-button:hover {
   background-color: #E6E6E6;
 }
+
 .modal-close-button:focus {
   outline: 3px solid #83B3D3;
 }
+
 .modal-close-button:active {
-  background-color: #E6E6E6;
   outline: none;
+}
+
+.modal-close-button:active::after {
   opacity: 0.3;
 }
 
@@ -1393,18 +1430,50 @@ a.card-btn-detailed {
 }
 
 .date-input {
+  width: 100%;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   border: none;
   background-color: #F2F2F2;
   border-radius: 4px;
+  margin-bottom: 4px;
+
+}
+
+.container-date-input {
+  position: relative;
+}
+
+.container-date-input::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
-  margin-bottom: 4px;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.date-input:hover {
+  outline: none;
+  background-color: #E6E6E6;
+}
+
+.date-input:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
+.date-input:disabled {
+  opacity: 0.3;
 }
 
 .modal-message {
@@ -1449,6 +1518,29 @@ a.card-btn-detailed {
   background-color: #F2F2F2;
   outline: none;
   padding: 14px 10px;
+}
+
+.svg-adults {
+  opacity: 0.3;
+}
+
+.button-guests:hover .svg-adults {
+  opacity: 1;
+}
+
+.button-guests:focus .svg-adults {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.button-guests:active .svg-adults {
+  outline: none;
+  opacity: 0.3;
+}
+
+.button-guests:disabled {
+  opacity: 0.1;
 }
 
 .modal-form-field {
