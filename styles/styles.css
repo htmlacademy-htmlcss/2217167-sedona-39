@@ -42,7 +42,7 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2),
-  0 0 0 15px #FFFFFF;
+    0 0 0 15px #FFFFFF;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -518,7 +518,7 @@ a.nav-user-favorite {
 }
 
 .subscription-field:hover,
-.subscription-field:active{
+.subscription-field:active {
   background-color: #ebf44060;
 }
 
@@ -574,22 +574,22 @@ a.nav-user-favorite {
   height: 40px;
 }
 
-.social-button{
+.socials-link:hover .social-button,
+.socials-link:focus .social-button {
+  fill: #68A2CA;
+}
+
+.socials-link:active .social-button {
+  fill: #68A2CA;
+  opacity: 0.3;
+}
+
+.social-icon {
   fill: #83B3D3;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.socials-link:hover .social-button,
-.socials-link:focus .social-button{
-  fill: #68A2CA;
-}
-
-.socials-link:active .social-button{
-  fill: #68A2CA;
-  opacity: 0.3;
 }
 
 .phone {
@@ -624,11 +624,11 @@ a.nav-user-favorite {
 }
 
 .copyright:hover .logo-html,
-.copyright:focus .logo-html{
- fill: #756157;
+.copyright:focus .logo-html {
+  fill: #756157;
 }
 
-.copyright:active .logo-html{
+.copyright:active .logo-html {
   fill: #756157;
   opacity: 0.3;
 }
@@ -1047,7 +1047,7 @@ a.nav-user-favorite {
 
 .select-control:hover,
 .select-control:focus {
-   border: 2px solid #68A2CA;
+  border: 2px solid #68A2CA;
 }
 
 .select-control:disabled {
@@ -1094,7 +1094,8 @@ a.nav-user-favorite {
 }
 
 .catalog-current {
-  border: 2px solid #000000;;
+  border: 2px solid #000000;
+  ;
 }
 
 /*catalog*/
@@ -1288,7 +1289,8 @@ a.card-btn-detailed {
   padding-top: 40px;
   margin-top: 40px;
   list-style: none;
-  border-top: 1px solid #E6E6E6;;
+  border-top: 1px solid #E6E6E6;
+  ;
 }
 
 .pagination-item {
@@ -1369,7 +1371,7 @@ a.card-btn-detailed {
   margin-top: 396px;
   padding: 64px 70px;
   background-color: #ffffff;
-  box-shadow: 0 25px 50px 0  rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
@@ -1590,9 +1592,9 @@ a.card-btn-detailed {
 
 .modal-form-field::-webkit-outer-spin-button,
 .modal-form-field::-webkit-inner-spin-button {
-    display: none;
-    appearance: none;
-    margin: 0;
+  display: none;
+  appearance: none;
+  margin: 0;
 }
 
 input[type='number'] {
@@ -1671,14 +1673,14 @@ input[type='number'] {
 }
 
 .tooltip-text::after {
-  content:'';
+  content: '';
   background-image: url("../images/triangle.svg");
   width: 19px;
   height: 9px;
   position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
