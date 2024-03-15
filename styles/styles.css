@@ -1405,6 +1405,7 @@ a.card-btn-detailed {
 .modal {
   position: relative;
   margin: auto;
+  margin-top: 396px;
   padding: 64px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
