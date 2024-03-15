@@ -286,9 +286,10 @@ a.nav-user-favorite {
 /*advantage*/
 
 .container-promo {
-  padding-top: 69px;
+  padding-top: 70px;
   padding-bottom: 69px;
   margin-bottom: 21px;
+  background-color: #FFFFFF;
 }
 
 .content-tittle {
@@ -1507,8 +1508,6 @@ a.card-btn-detailed {
   border: none;
   background-color: #F2F2F2;
   border-radius: 4px;
-  margin-bottom: 4px;
-
 }
 
 .container-date-input {
@@ -1549,6 +1548,7 @@ a.card-btn-detailed {
   font-size: 16px;
   line-height: 21px;
   padding: 0 20px;
+  padding-top: 4px;
 }
 
 .modal-message-error {
@@ -1585,7 +1585,7 @@ a.card-btn-detailed {
   border: none;
   background-color: #F2F2F2;
   outline: none;
-  padding: 14px 10px;
+  padding: 13px 10px;
   cursor: pointer;
 }
 
@@ -1615,8 +1615,9 @@ a.card-btn-detailed {
 .modal-form-field {
   font-family: inherit;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -1704,7 +1705,7 @@ input[type='number'] {
   right: 50%;
   transform: translate(50%, 12%);
   z-index: 1;
-  display: block;
+  display: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1733,4 +1734,5 @@ input[type='number'] {
   line-height: 24px;
   text-align: center;
   margin-top: 25px;
+  border-radius: 10px;
 }
