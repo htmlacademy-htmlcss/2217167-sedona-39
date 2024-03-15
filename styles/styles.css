@@ -925,7 +925,7 @@ a.nav-user-favorite {
   overflow: auto;
   font-size: 18px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .range-scale {
@@ -958,8 +958,6 @@ a.nav-user-favorite {
 .range-toggle:focus {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   outline: 3px solid #83B3D3;
-  -webkit-user-select: none;
-          user-select: none;
 }
 
 .range-toggle:active {
@@ -1407,7 +1405,6 @@ a.card-btn-detailed {
 .modal {
   position: relative;
   margin: auto;
-  margin-top: 396px;
   padding: 64px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
