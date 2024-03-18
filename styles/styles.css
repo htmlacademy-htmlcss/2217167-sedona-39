@@ -1029,7 +1029,7 @@ a.nav-user-favorite {
 
 .catalog {
   width: 1200px;
-  padding: 0 70px;
+  padding: 0 69px;
   padding-top: 50px;
   padding-bottom: 60px;
 }
@@ -1078,7 +1078,7 @@ a.nav-user-favorite {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0;
-  padding: 12px 18px 12px 18px;
+  padding: 13px 18px 12px 18px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 12px center;
