@@ -1031,13 +1031,13 @@ a.nav-user-favorite {
   width: 1200px;
   padding: 0 70px;
   padding-top: 50px;
-  padding-bottom: 52px;
+  padding-bottom: 60px;
 }
 
 .result-container {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .result-title {
@@ -1047,7 +1047,7 @@ a.nav-user-favorite {
   text-transform: uppercase;
   margin: 0;
   margin-right: auto;
-  padding: 6px 0;
+  padding: 0;
 }
 
 /*select*/
@@ -1074,7 +1074,7 @@ a.nav-user-favorite {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  width: 292px;
+  min-width: 292px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0;
@@ -1088,12 +1088,11 @@ a.nav-user-favorite {
 
 .select-control:hover,
 .select-control:focus {
-  outline: 2px solid #68A2CA;
-  border: none;
+  border-color: #68A2CA;
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
   opacity: 0.3;
 }
 
@@ -1127,19 +1126,19 @@ a.nav-user-favorite {
 }
 
 .catalog-button:hover {
-  outline: 2px solid #000000;
+  border-color: #000000;
 }
 
 .catalog-button:focus {
-  outline: 2px solid #68A2CA;
+  border-color: #68A2CA;
 }
 
 .catalog-button:active  {
-  outline: 2px solid #000000;
+  border-color: #000000;
 }
 
 .catalog-current {
-  outline: 2px solid #000000;
+  border-color: #000000;
 }
 
 /*catalog*/
@@ -1156,8 +1155,8 @@ a.nav-user-favorite {
 .product-card {
   display: flex;
   flex-direction: column;
-  width: 342px;
-  padding: 20px 20px;
+  min-width: 342px;
+  padding: 20px 19px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
 }
@@ -1315,8 +1314,9 @@ a.card-btn-detailed {
 /*pagination*/
 
 .pagination-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(15, 60px);
+  gap: 8px;
   margin: 0;
   padding: 0;
   padding-top: 40px;
@@ -1324,14 +1324,6 @@ a.card-btn-detailed {
   list-style: none;
   border-top: 1px solid #E6E6E6;
   ;
-}
-
-.pagination-item {
-  margin-bottom: 8px;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .pagination-link {
