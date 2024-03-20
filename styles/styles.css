@@ -31,9 +31,8 @@ body {
   text-decoration: none;
   background-color: #F2F2F2;
   color: #000000;
-  min-width: 1280px;
-  padding: 0 40px 0 40px;
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -466,15 +465,12 @@ a.nav-user-favorite {
 }
 
 .index-search-btn {
-  display: block;
-  margin: 0 auto;
   background-color: #756157;
   width: 376px;
   padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
   margin-top: 53px;
-  text-decoration: none;
 }
 
 .index-search-btn:hover,
@@ -485,7 +481,6 @@ a.nav-user-favorite {
 
 .index-search-btn:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #756157;
   outline: none;
 }
 
@@ -700,7 +695,7 @@ a.nav-user-favorite {
   position: relative;
 }
 
-.breadcrumbs-item:not(:last-child)::after  {
+.breadcrumbs-item:not(:last-child)::after{
   content: "";
   display: block;
   position: absolute;
@@ -1082,8 +1077,7 @@ a.nav-user-favorite {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   margin: 0;
-  padding: 13px 32px 12px 18px;
-  background-color: #FFFFFF;
+  padding: 13px 18px 12px 18px;
   background-image: url("../images/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 12px center;
@@ -1138,7 +1132,7 @@ a.nav-user-favorite {
   border-color: #68A2CA;
 }
 
-.catalog-button:active {
+.catalog-button:active  {
   border-color: #000000;
 }
 
@@ -1263,7 +1257,7 @@ a.card-btn-detailed {
 }
 
 .card-favorite {
-  width: 140px;
+ width: 140px;
 }
 
 .card-selected {
@@ -1328,6 +1322,7 @@ a.card-btn-detailed {
   margin-top: 40px;
   list-style: none;
   border-top: 1px solid #E6E6E6;
+  ;
 }
 
 .pagination-link {
@@ -1632,7 +1627,7 @@ a.card-btn-detailed {
   margin: 0;
 }
 
-input[type="number"] {
+input[type='number'] {
   -webkit-appearance: textfield;
           appearance: textfield;
 }
@@ -1709,7 +1704,7 @@ input[type="number"] {
 }
 
 .tooltip-text::after {
-  content: "";
+  content: '';
   background-image: url("../images/triangle.svg");
   width: 19px;
   height: 9px;
